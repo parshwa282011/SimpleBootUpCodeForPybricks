@@ -26,11 +26,11 @@ while not isProgramChosen:
         isProgramChosen = True
     if Button.RIGHT in buttonsPressed:
         programNumberSelected += 1
-        wait(1)
+        wait(100)
         # The wait is to make sure that it doesn't go on infinitly
     if Button.LEFT in buttonsPressed:
         programNumberSelected -= 1
-        wait(1)
+        wait(100)
     if programNumberSelected > maxProgramNumber:
             programNumberSelected = 1
     if programNumberSelected < 1:
